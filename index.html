@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vistarleaf — Eco-Friendly Leaf Plates & Tableware</title>
+  <meta name="description" content="Vistarleaf makes stylish, compostable leaf plates, bowls and trays. Bulk orders for restaurants & events. Chemical-free, food-safe, composts in ~60 days.">
+  <meta property="og:title" content="Vistarleaf — Eco-Friendly Leaf Plates & Tableware">
+  <meta property="og:description" content="Stylish, compostable leaf plates, bowls and trays — partner with us for wholesale and events.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=800&auto=format&fit=crop">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- placeholder favicon -->
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a2d9b6f9f9.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root{
+      --accent:#2f7a3e;
+      --muted:#6c757d;
+      --light-green:#e8f5e8;
+      --dark-green:#1a5928;
+    }
+    body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+    .hero{
+      background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), 
+      url('https://as1.ftcdn.net/v2/jpg/04/39/02/46/1000_F_439024603_pHjWAZrHOojIFLykqoG5YBv65zcomlMS.jpg');
+      background-size:cover;
+      background-position:center;
+      color:white;
+      padding:120px 0;
+      min-height:70vh;
+    }
+    .hero h1{font-weight:700;letter-spacing:0.3px}
+    .trust-bar .icon{font-size:20px;color:var(--accent)}
+    .product-card img{height:250px;object-fit:cover;border-radius:12px 12px 0 0;}
+    .sustain-tile{background:var(--light-green);border-radius:12px;padding:20px;border:2px solid #d4edda;}
+    .footer-dark{background:#050505;color:#ddd;padding:50px 0}
+    .glow:hover{
+      box-shadow:0 12px 40px rgba(63,191,102,0.2);
+      transform:translateY(-6px);
+      transition:all .3s ease;
+    }
+    .founder-img{height:220px;object-fit:cover;border-radius:12px}
+    .process-step{
+      background:white;
+      border-radius:15px;
+      padding:25px;
+      text-align:center;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom:20px;
+    }
+    .impact-number{
+      font-size:2.5rem;
+      font-weight:700;
+      color:var(--accent);
+      line-height:1;
+    }
+    .navbar-brand img{
+      width:45px;
+      height:45px;
+      border-radius:8px;
+      object-fit:cover;
+    }
+    @media (max-width:575px){
+      .hero{padding:80px 0;min-height:60vh}
+      .product-card img{height:180px}
+      .impact-number{font-size:2rem}
+    }
+  </style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Vistarleaf",
+    "url":"https://vistarleaf.example.com",
+    "logo":"https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=200&auto=format&fit=crop",
+    "sameAs":["https://www.instagram.com/vistarleaf/"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=100&auto=format&fit=crop" alt="Vistarleaf Logo">
+      <span class="fw-bold text-success">Vistarleaf</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sustainability">Sustainability</a></li>
+        <li class="nav-item"><a class="nav-link" href="#business">Business</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-flex ms-3 gap-2">
+        <a href="#products" class="btn btn-success">Shop Now</a>
+        <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#partnerModal">Partner With Us</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 text-lg-start text-center">
+        <h1 class="display-4 mb-4">Eat Naturally. Live Sustainably.</h1>
+        <p class="lead mb-4">100% biodegradable leafware made from natural areca leaves — chemical-free, durable, and fully compostable. Perfect for restaurants, events & home use.</p>
+        <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+          <a href="#products" class="btn btn-lg btn-light text-success shadow-sm px-4">
+            <i class="fa-solid fa-shopping-cart me-2"></i>Shop Now
+          </a>
+          <button class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal" data-bs-target="#partnerModal">
+            <i class="fa-solid fa-handshake me-2"></i>Partner With Us
+          </button>
+        </div>
+        <p class="mt-4 small text-white-50">
+          <i class="fa-solid fa-gift me-1"></i> Free samples for wholesale enquiries • 
+          <i class="fa-solid fa-globe me-1"></i> Ships worldwide
+        </p>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="position-relative">
+          <img src="https://img.freepik.com/premium-photo/indian-cuisine-meals-served-banana-leaf-traditional-south-indian-cuisine_875825-50086.jpg?w=2000" alt="Eco-friendly leaf plates with food" 
+               alt="Eco-friendly leaf plates with food" 
+               class="img-fluid rounded-3 shadow-lg">
+          <div class="position-absolute top-0 end-0 bg-success text-white px-3 py-2 rounded-3 m-3">
+            <small><strong>100% Natural</strong></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST BAR -->
+<section class="py-4 bg-white border-bottom">
+  <div class="container">
+    <div class="row g-3 trust-bar">
+      <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <i class="fa-solid fa-leaf icon d-block mb-1"></i>
+          <small class="text-muted">100% Biodegradable</small>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <i class="fa-solid fa-fire icon d-block mb-1"></i>
+          <small class="text-muted">Heat & Cold Safe</small>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <i class="fa-solid fa-apple-whole icon d-block mb-1"></i>
+          <small class="text-muted">Chemical-Free</small>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <i class="fa-solid fa-truck icon d-block mb-1"></i>
+          <small class="text-muted">Bulk & Export Ready</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="mb-4">About Vistarleaf</h2>
+        <p class="lead mb-4">We craft dining solutions from naturally fallen areca leaves — handcrafted, hygienic, and fully compostable. Our mission is to replace single-use plastic with beautiful, planet-friendly alternatives.</p>
+        <p class="mb-4">Every plate tells a story of sustainability, supporting local artisans while protecting our environment for future generations.</p>
+        
+        <!-- Founder Video -->
+        <div class="ratio ratio-16x9 mb-4 rounded overflow-hidden shadow">
+          <iframe src="https://www.youtube.com/embed/41pu64u1iCM?si=y0NbwnFCVXhROdcD" 
+                  title="Vistarleaf Founder Story" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen></iframe>
+        </div>
+        
+        <a href="#sustainability" class="btn btn-outline-success">Learn More About Our Impact</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="https://twotinyspoons.com/wp-content/uploads/2021/07/palm-leaf-plates-1.jpg" alt="Areca leaves being processed" 
+                 alt="Areca leaves being processed" 
+                 class="img-fluid rounded shadow-sm">
+          </div>
+          <div class="col-6">
+            <img src="https://i.ytimg.com/vi/_saESiUYtjY/maxresdefault.jpg" 
+                 alt="Sustainable manufacturing process" 
+                 class="img-fluid rounded shadow-sm">
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fa-solid fa-bullseye text-success fs-4 me-3"></i>
+                  <h5 class="mb-0">Our Mission</h5>
+                </div>
+                <p class="mb-0 text-muted">To provide eco-friendly dining solutions that protect our planet while supporting local communities and traditional craftsmanship.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SUSTAINABILITY -->
+<section id="sustainability" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="mb-4">Our Sustainability Impact</h2>
+        <p class="text-muted mb-4">We believe in measurable impact — reducing plastic waste, supporting local communities, and returning nutrients to the soil naturally.</p>
+        
+        <div class="row g-3 mb-4">
+          <div class="col-4">
+            <div class="sustain-tile text-center">
+              <div class="impact-number">2.5K+</div>
+              <small class="text-muted d-block">kg plastic saved</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="sustain-tile text-center">
+              <div class="impact-number">60</div>
+              <small class="text-muted d-block">days to compost</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="sustain-tile text-center">
+              <div class="impact-number">300+</div>
+              <small class="text-muted d-block">events supplied</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card border-success">
+          <div class="card-body">
+            <h6 class="text-success mb-2">
+              <i class="fa-solid fa-certificate me-2"></i>Eco Certifications
+            </h6>
+            <ul class="list-unstyled mb-0 small">
+              <li><i class="fa-solid fa-check text-success me-2"></i>FDA Food Safety Approved</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>BIS Quality Standards</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>100% Biodegradable Certified</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h5 class="mb-4">
+              <i class="fa-solid fa-recycle text-success me-2"></i>Decomposition Timeline
+            </h5>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="process-step">
+                  <div class="d-flex align-items-center">
+                    <div class="bg-success text-white rounded-circle p-2 me-3" style="width:40px;height:40px">
+                      <small class="fw-bold">0</small>
+                    </div>
+                    <div class="text-start">
+                      <strong>Day 0:</strong> Freshly crafted and hygienic, ready to use
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="process-step">
+                  <div class="d-flex align-items-center">
+                    <div class="bg-warning text-dark rounded-circle p-2 me-3" style="width:40px;height:40px">
+                      <small class="fw-bold">30</small>
+                    </div>
+                    <div class="text-start">
+                      <strong>Day 30:</strong> Visible breakdown begins in compost conditions
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="process-step">
+                  <div class="d-flex align-items-center">
+                    <div class="bg-success text-white rounded-circle p-2 me-3" style="width:40px;height:40px">
+                      <small class="fw-bold">60</small>
+                    </div>
+                    <div class="text-start">
+                      <strong>Day 60:</strong> Completely composted, nutrients return to soil
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS INQUIRY -->
+<section id="business" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h2 class="mb-4">Wholesale & B2B Solutions</h2>
+        <p class="text-muted mb-4">We partner with restaurants, caterers, event planners, and eco-conscious brands worldwide. Get competitive pricing, custom branding, and reliable supply chain.</p>
+        
+        <div class="row g-3 mb-4">
+          <div class="col-md-3 col-6 text-center">
+            <div class="card border-success h-100">
+              <div class="card-body p-3">
+                <i class="fa-solid fa-utensils text-success fs-3 mb-2"></i>
+                <h6 class="mb-0 small">Restaurants</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <div class="card border-success h-100">
+              <div class="card-body p-3">
+                <i class="fa-solid fa-calendar-days text-success fs-3 mb-2"></i>
+                <h6 class="mb-0 small">Events</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <div class="card border-success h-100">
+              <div class="card-body p-3">
+                <i class="fa-solid fa-store text-success fs-3 mb-2"></i>
+                <h6 class="mb-0 small">Retail</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <div class="card border-success h-100">
+              <div class="card-body p-3">
+                <i class="fa-solid fa-globe text-success fs-3 mb-2"></i>
+                <h6 class="mb-0 small">Export</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-light p-4 rounded mb-4">
+          <h6 class="mb-3">Simple Process:</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-success fs-6 px-3 py-2">1. Inquiry</span>
+            <i class="fa-solid fa-arrow-right text-muted align-self-center"></i>
+            <span class="badge bg-success fs-6 px-3 py-2">2. Sample</span>
+            <i class="fa-solid fa-arrow-right text-muted align-self-center"></i>
+            <span class="badge bg-success fs-6 px-3 py-2">3. Quote</span>
+            <i class="fa-solid fa-arrow-right text-muted align-self-center"></i>
+            <span class="badge bg-success fs-6 px-3 py-2">4. Delivery</span>
+          </div>
+        </div>
+        
+        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#partnerModal">
+          <i class="fa-solid fa-handshake me-2"></i>Start Business Inquiry
+        </button>
+      </div>
+      
+      <div class="col-lg-5">
+        <div class="card shadow border-0">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=500&auto=format&fit=crop" 
+               class="card-img-top" 
+               alt="Business partnership" 
+               style="height:200px;object-fit:cover;">
+          <div class="card-body p-4">
+            <h6 class="mb-3">Why Partner With Us?</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fa-solid fa-check-circle text-success me-2"></i>Consistent supply & quality control</li>
+              <li class="mb-2"><i class="fa-solid fa-check-circle text-success me-2"></i>Custom branding & packaging</li>
+              <li class="mb-2"><i class="fa-solid fa-check-circle text-success me-2"></i>Volume discounts & flexible terms</li>
+              <li class="mb-2"><i class="fa-solid fa-check-circle text-success me-2"></i>International shipping available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Partners Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-5 text-center">
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <p class="lead mb-3">"These leaf plates transformed our eco-wedding. Guests loved the natural feel and we felt great about zero plastic waste. Quality exceeded expectations!"</p>
+                  <div class="text-muted">
+                    <strong>— Green Banquet Co.</strong><br>
+                    <small>Event Management, Mumbai</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-5 text-center">
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <p class="lead mb-3">"Reliable supply for our restaurant chain. Customers appreciate our commitment to sustainability. Vistarleaf delivers consistent quality every time."</p>
+                  <div class="text-muted">
+                    <strong>— Spice Route Restaurants</strong><br>
+                    <small>Restaurant Chain, Delhi</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-5 text-center">
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <p class="lead mb-3">"Perfect for our organic food delivery service. The plates handle hot food beautifully and align perfectly with our brand values."</p>
+                  <div class="text-muted">
+                    <strong>— EcoEats</strong><br>
+                    <small>Food Delivery, Bangalore</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <h3 class="mb-4">Get In Touch</h3>
+        <p class="text-muted mb-4">Have questions about our products or need samples? We're here to help you make the switch to sustainable dining.</p>
+        
+        <form id="contactForm" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label class="form-label">Name *</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-control" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Subject</label>
+            <select class="form-select">
+              <option value="">Select topic</option>
+              <option value="product">Product Inquiry</option>
+              <option value="wholesale">Wholesale/Business</option>
+              <option value="samples">Sample Request</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Message *</label>
+            <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..." required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="newsletter">
+              <label class="form-check-label small text-muted" for="newsletter">
+                Subscribe to our newsletter for product updates and sustainability tips
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success btn-lg px-4">
+              <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h5 class="mb-3">
+                  <i class="fa-solid fa-location-dot text-success me-2"></i>Contact Information
+                </h5>
+                <div class="mb-3">
+                  <strong>Email:</strong><br>
+                  <a href="mailto:hello@vistarleaf.com" class="link-success">hello@vistarleaf.com</a><br>
+                  <a href="mailto:business@vistarleaf.com" class="link-success">business@vistarleaf.com</a> (for wholesale)
+                </div>
+                <div class="mb-3">
+                  <strong>Phone:</strong><br>
+                  <a href="tel:+919876543210" class="link-success">+91 98765 43210</a>
+                </div>
+                <div class="mb-3">
+                  <strong>Business Hours:</strong><br>
+                  <span class="text-muted">Monday - Saturday: 9:00 AM - 6:00 PM IST</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h6 class="mb-3">
+                  <i class="fa-solid fa-share-nodes text-success me-2"></i>Follow Us
+                </h6>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a class="btn btn-outline-success btn-sm" href="https://www.instagram.com/vistarleaf/" target="_blank">
+                    <i class="fa-brands fa-instagram me-1"></i>Instagram
+                  </a>
+                  <a class="btn btn-outline-success btn-sm" href="#" target="_blank">
+                    <i class="fa-brands fa-facebook me-1"></i>Facebook
+                  </a>
+                  <a class="btn btn-outline-success btn-sm" href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin me-1"></i>LinkedIn
+                  </a>
+                  <a class="btn btn-outline-success btn-sm" href="#" target="_blank">
+                    <i class="fa-brands fa-whatsapp me-1"></i>WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <!-- Google Maps embed -->
+            <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+              <iframe src="https://maps.google.com/maps?q=Warangal,Telangana,India&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Vistarleaf Location">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+<section class="py-5 bg-success text-white">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h3 class="mb-3">Stay Updated</h3>
+        <p class="mb-4">Get the latest updates on new products, sustainability tips, and exclusive offers for eco-conscious living.</p>
+        <div class="row g-2">
+          <div class="col-md-8">
+            <input type="email" class="form-control form-control-lg" placeholder="Enter your email address">
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-light btn-lg w-100 text-success fw-semibold">Subscribe</button>
+          </div>
+        </div>
+        <small class="d-block mt-2 opacity-75">Join 1000+ eco-warriors making a difference</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-dark">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=100&auto=format&fit=crop" 
+               alt="Vistarleaf" 
+               width="40" 
+               height="40" 
+               class="rounded">
+          <h5 class="text-white mb-0">Vistarleaf</h5>
+        </div>
+        <p class="text-muted mb-3">Eco-friendly leaf plates & tableware. Handcrafted from natural areca leaves, compostable, and kind to the planet.</p>
+        <div class="d-flex gap-2">
+          <a href="https://www.instagram.com/vistarleaf/" class="btn btn-outline-light btn-sm">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-light btn-sm">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-outline-light btn-sm">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <h6 class="text-white mb-3">Products</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#products" class="link-light text-decoration-none small">Dinner Plates</a></li>
+          <li class="mb-2"><a href="#products" class="link-light text-decoration-none small">Bowls</a></li>
+          <li class="mb-2"><a href="#products" class="link-light text-decoration-none small">Serving Trays</a></li>
+          <li class="mb-2"><a href="#products" class="link-light text-decoration-none small">Custom Orders</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <h6 class="text-white mb-3">Company</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#about" class="link-light text-decoration-none small">About Us</a></li>
+          <li class="mb-2"><a href="#sustainability" class="link-light text-decoration-none small">Sustainability</a></li>
+          <li class="mb-2"><a href="#business" class="link-light text-decoration-none small">Business</a></li>
+          <li class="mb-2"><a href="#contact" class="link-light text-decoration-none small">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <h6 class="text-white mb-3">Support</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none small">FAQ</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none small">Shipping Info</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none small">Returns</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none small">Privacy Policy</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2">
+        <h6 class="text-white mb-3">Contact</h6>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">
+            <i class="fa-solid fa-envelope me-2"></i>
+            hello@vistarleaf.com
+          </li>
+          <li class="mb-2">
+            <i class="fa-solid fa-phone me-2"></i>
+            +91 98765 43210
+          </li>
+          <li class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Warangal, Telangana, India
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <hr class="my-4 border-secondary">
+    
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="small text-muted mb-md-0">© <span id="year"></span> Vistarleaf. All rights reserved. Made with 🌱 for the planet.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <div class="d-flex justify-content-md-end gap-3 small">
+          <a href="#" class="link-light text-decoration-none">Terms of Service</a>
+          <a href="#" class="link-light text-decoration-none">Privacy Policy</a>
+          <a href="#" class="link-light text-decoration-none">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Partner Modal -->
+<div class="modal fade" id="partnerModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title">Business Partnership Inquiry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <p class="text-muted mb-4">Tell us about your requirements and we'll provide a customized quote with samples.</p>
+        <form id="partnerForm" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label class="form-label">Contact Name *</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Required</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Business Name *</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Required</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-control" required>
+            <div class="invalid-feedback">Valid email required</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Phone *</label>
+            <input type="tel" class="form-control" required>
+            <div class="invalid-feedback">Required</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Business Type</label>
+            <select class="form-select">
+              <option value="">Select type</option>
+              <option value="restaurant">Restaurant</option>
+              <option value="catering">Catering Service</option>
+              <option value="events">Event Management</option>
+              <option value="retail">Retail Store</option>
+              <option value="export">Export Business</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Monthly Requirement</label>
+            <select class="form-select">
+              <option value="">Estimate quantity</option>
+              <option value="500-1000">500-1,000 pieces</option>
+              <option value="1000-5000">1,000-5,000 pieces</option>
+              <option value="5000-10000">5,000-10,000 pieces</option>
+              <option value="10000+">10,000+ pieces</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Requirements & Special Requests</label>
+            <textarea class="form-control" rows="3" placeholder="Describe your specific needs, preferred products, custom branding requirements, etc."></textarea>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="samplesRequested">
+              <label class="form-check-label" for="samplesRequested">
+                <strong>Request free samples</strong> (We'll include shipping details)
+              </label>
+            </div>
+          </div>
+          <div class="col-12 text-end pt-3">
+            <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-success">
+              <i class="fa-solid fa-paper-plane me-2"></i>Send Inquiry
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Form validation handler
+  (function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+          event.stopPropagation();
+        } else {
+          // Simulate successful submission
+          var btn = form.querySelector('button[type="submit"], button:not([type])')
+          if(btn) {
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-2"></i>Sending...';
+          }
+          
+          setTimeout(() => {
+            alert('Thank you! Your message has been sent successfully. We will reply within 2 business days.');
+            form.reset();
+            form.classList.remove('was-validated');
+            
+            // Reset button
+            if(btn) {
+              btn.disabled = false;
+              btn.innerHTML = btn.id === 'partnerForm' ? 
+                '<i class="fa-solid fa-paper-plane me-2"></i>Send Inquiry' : 
+                '<i class="fa-solid fa-paper-plane me-2"></i>Send Message';
+            }
+            
+            // Close modal if it exists
+            var modal = bootstrap.Modal.getInstance(document.querySelector('.modal.show'));
+            if(modal) modal.hide();
+          }, 1500);
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+
+  // Newsletter subscription
+  document.querySelector('section.bg-success button').addEventListener('click', function() {
+    const emailInput = this.parentElement.previousElementSibling.querySelector('input');
+    const email = emailInput.value;
+    
+    if (email && email.includes('@')) {
+      this.disabled = true;
+      this.textContent = 'Subscribing...';
+      
+      setTimeout(() => {
+        alert('Thank you for subscribing to our newsletter!');
+        emailInput.value = '';
+        this.disabled = false;
+        this.textContent = 'Subscribe';
+      }, 1000);
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  });
+
+  // Add scroll effect to navbar
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('shadow');
+    } else {
+      navbar.classList.remove('shadow');
+    }
+  });
+</script>
+</body>
+</html>
